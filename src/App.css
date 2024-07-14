@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&family=Quicksand&family=Rubik&family=Staatliches&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  padding: 0;
+  margin: 0;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  background-color: #023047;
+}
+
+.game-name {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 5em;
+  color: #C7DBE6;
+  /* color: #071108; */
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  border: solid black 1px;
+  font-size: 2em;
+  font-weight: bold;
+  /* color: white; */
+  background-color: #C7DBE6;
+  /* background-color: rgb(191, 215, 159); */
+  width: 60px;
+  height: 60px;
+  /* border-radius: 6px; */
+}
+
+.status{
   color: white;
+  font-size: large;
+  font-family: 'Quicksand';
+  line-height: 5em;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  background-color: #C7DBE6;
+  border: none; 
+  border-radius: 5px;
+  color: #023047; 
+  margin: 2em 0;
+  padding: 10px 60px; 
+  font-size: 1em; 
+  font-weight: bold; 
+  transition: background-color 0.3s, color 0.3s; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+  color: #1a1b1c; 
+  background-color: #c7dbe63f; 
+}
+
+button{
+  cursor: pointer;
 }
